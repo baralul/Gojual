@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "200929312535",
+    "project_id": "gojual-tam",
+    "storage_bucket": "gojual-tam.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200929312535:android:89144ccdfc150b7df54152",
+        "android_client_info": {
+          "package_name": "com.tam.gojual"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5t-zWHS-ean60XHI80gippPxVIvKFuHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

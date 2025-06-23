@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter Postingan"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Kategori"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_elektronik"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elektronik" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_kendaraan"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kendaraan" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_properti"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Properti" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_jasa"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jasa" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_location_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Filter berdasarkan Lokasi">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_location_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_reset_filter"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Reset" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_apply_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Terapkan" />
+    </LinearLayout>
+
+</LinearLayout>

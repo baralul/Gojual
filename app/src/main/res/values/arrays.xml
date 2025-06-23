@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="post_types">
+        <item>Barang</item>
+        <item>Jasa</item>
+    </string-array>
+
+    <string-array name="item_categories">
+        <item>Elektronik</item>
+        <item>Kendaraan</item>
+        <item>Properti</item>
+    </string-array>
+
+    <string-array name="service_categories">
+        <item>Tukang</item>
+        <item>Guru Privat</item>
+        <item>Teknisi</item>
+    </string-array>
+</resources>
